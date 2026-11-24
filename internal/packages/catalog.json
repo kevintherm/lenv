@@ -1,0 +1,74 @@
+[
+  {
+    "service": "postgres",
+    "version": "16.16",
+    "os": "darwin",
+    "arch": "arm64",
+    "url": "https://github.com/theseus-rs/postgresql-binaries/releases/download/16.16.0/postgresql-16.16.0-aarch64-apple-darwin.tar.gz",
+    "sha256": "b7f002d554cd8a916d189e24b8f885d088b7909bb6d2de092f82c10274cb8251",
+    "archive_root": "postgresql-16.16.0-aarch64-apple-darwin",
+    "bytes": 89018605
+  },
+  {
+    "service": "postgres",
+    "version": "17.12",
+    "os": "darwin",
+    "arch": "arm64",
+    "url": "https://github.com/theseus-rs/postgresql-binaries/releases/download/17.12.0/postgresql-17.12.0-aarch64-apple-darwin.tar.gz",
+    "sha256": "2f752033b208f9a6a12ef64a9ee23bf19149cff160841980db1e221bf7d24809",
+    "archive_root": "postgresql-17.12.0-aarch64-apple-darwin",
+    "bytes": 90196480
+  },
+  {
+    "service": "mysql",
+    "version": "8.4.10",
+    "os": "darwin",
+    "arch": "arm64",
+    "url": "https://cdn.mysql.com/Downloads/MySQL-8.4/mysql-8.4.10-macos15-arm64.tar.gz",
+    "sha256": "282618afd5cb662b94ac837f210b0ccb87ef156dd4c03eb88e094702a5c9ea1f",
+    "archive_root": "mysql-8.4.10-macos15-arm64",
+    "bytes": 167808104
+  },
+  {
+    "service": "mongodb",
+    "version": "8.0.38",
+    "os": "darwin",
+    "arch": "arm64",
+    "url": "https://fastdl.mongodb.org/osx/mongodb-macos-arm64-8.0.38.tgz",
+    "sha256": "5c372533187a7789b6b2f4d7856f0651557dfbed572dbe5f4c23f43578fc74df",
+    "archive_root": "mongodb-macos-aarch64--8.0.38",
+    "bytes": 81861720
+  },
+  {
+    "service": "caddy",
+    "version": "2.11.9",
+    "os": "darwin",
+    "arch": "arm64",
+    "url": "https://github.com/caddyserver/caddy/releases/download/v2.11.9/caddy_2.11.9_mac_arm64.tar.gz",
+    "sha256": "d075afc620376679a77b453399bf7ada264cab3280b2833e4ed1372abc0c1c13",
+    "archive_root": "",
+    "bin_dir": ".",
+    "bytes": 17162425
+  },
+  {
+    "service": "php",
+    "version": "8.5.12",
+    "os": "darwin",
+    "arch": "arm64",
+    "url": "https://github.com/verzly/php/releases/download/v8.5.12/php-8.5.12-cli-macos-aarch64.tar.gz",
+    "sha256": "4ba143eb17d7d587ddfa81501a18340fece725ee645c808d14e27c3d1c43261a",
+    "archive_root": "",
+    "bin_dir": ".",
+    "bytes": 38424191
+  },
+  {
+    "service": "node",
+    "version": "24.22.3",
+    "os": "darwin",
+    "arch": "arm64",
+    "url": "https://nodejs.org/dist/v24.22.3/node-v24.22.3-darwin-arm64.tar.gz",
+    "sha256": "ff6e17d4874b76d272212b908cc020d6e815fba5a6c7eaaa06add725840307fd",
+    "archive_root": "node-v24.22.3-darwin-arm64",
+    "bytes": 53084299
+  }
+]
