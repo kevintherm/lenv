@@ -40,6 +40,16 @@
     "bytes": 81861720
   },
   {
+    "service": "redis",
+    "version": "8.12.0",
+    "os": "darwin",
+    "arch": "arm64",
+    "url": "https://github.com/kevintherm/lenv/releases/download/pkg-redis-8.12.0-darwin-arm64-r1/redis-8.12.0-darwin-arm64-core.tar.gz",
+    "sha256": "f51d06fc53b6b02db3f9b2380cb0a82629259522dbbd99ef5be8e61fddebd780",
+    "archive_root": "redis-8.12.0-darwin-arm64-core",
+    "bytes": 1675530
+  },
+  {
     "service": "caddy",
     "version": "2.11.9",
     "os": "darwin",

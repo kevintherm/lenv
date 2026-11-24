@@ -33,7 +33,7 @@ Run `./lenv service <service> list` to see available versions for your platform,
 | `mysql` | 8.4.10 (macOS 15 or newer) | Package only |
 | `mariadb` | Not available yet | |
 | `mongodb` | 8.0.38 Community Server | Package only; `mongosh` is not included |
-| `redis` | Not available yet | Read-only discovery |
+| `redis` | [8.12.0 core](https://github.com/kevintherm/lenv/releases/tag/pkg-redis-8.12.0-darwin-arm64-r1) (macOS 15+) | Package and read-only discovery; no managed lifecycle, TLS, or optional Redis modules |
 | `caddy` | 2.11.9 | Local HTTPS proxy via `lenv site` |
 | `php` | 8.5.12 CLI | Package only; no PHP-FPM or `pdo_pgsql` in this build |
 | `node` | 24.22.3 LTS with npm | Package only |

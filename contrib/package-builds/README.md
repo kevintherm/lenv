@@ -10,7 +10,7 @@ bash contrib/package-builds/redis-darwin-arm64.sh "$out"
 bash contrib/package-builds/mariadb-darwin-arm64.sh "$out" /absolute/path/to/cmake
 ```
 
-The candidates target macOS 15 or newer. The Redis package contains the core server and CLI, without TLS or the optional Redis modules. The MariaDB recipe targets the standalone distribution with bundled TLS and without Galera clustering.
+The candidates target macOS 15 or newer. The Redis package contains the core server and CLI, without TLS or the optional Redis modules. The MariaDB release candidate uses bundled wolfSSL for the server, with client TLS and Galera clustering disabled. The earlier static OpenSSL experiment is not a release candidate.
 
 MariaDB can take longer than 15 minutes to compile. The recipe prints its work directory and retains it on failure or interruption. If CMake configuration finished, pass that same work directory as the third argument to resume compilation:
 
@@ -34,3 +34,5 @@ LENV_TEST_PACKAGE_ARCHIVE=/absolute/path/to/candidate.tar.gz go test ./internal/
 ```
 
 Before adding a candidate to the public catalog, verify it from a relocated directory on a Mac without Homebrew dependencies. Check the runtime libraries, initialize temporary data, query the service, stop it, and verify data survives restart. Decide who owns updates and where to host the archives. Review license notices and corresponding-source requirements before distributing binaries. The printed SHA-256 is for that specific build; the scripts do not promise byte-for-byte reproducibility across toolchains.
+
+Publish package assets under versioned `pkg-` tags, separate from lenv application releases. Include matching upstream source, the build recipe and any patches or dependency sources needed to reproduce the binary, license notices, and `SHA256SUMS`. Verify the public download before adding its URL, size, and SHA-256 to the catalog. Use a new tag for a rebuilt package; don't replace an asset referenced by a released catalog.
